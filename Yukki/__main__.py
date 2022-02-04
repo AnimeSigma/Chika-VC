@@ -82,7 +82,7 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]Congrats!! Yukki Music Bot has started successfully!\n"
+        "[bold green]Congrats!! Chika Music Bot has started successfully!\n"
     )
     try:
         await app.send_message(
@@ -115,8 +115,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_1.join_chat("OfficialYukki")
-            await ASS_CLI_1.join_chat("YukkiSupport")
+            await ASS_CLI_1.join_chat("AnimeSigma")
+            await ASS_CLI_1.join_chat("Anime_Sigma")
         except:
             pass
         console.print(f"├[red] Assistant 1 Started as {ASSNAME1}!")
@@ -233,6 +233,8 @@ home_text_pm = f"""Hello ,
 My name is {BOT_NAME}.
 A Telegram Music+Video Streaming bot with some useful features.
 
+I'm maintained By @Vedant_Vn 😉
+
 All commands can be used with: / """
 
 
@@ -314,7 +316,7 @@ async def start_command(_, message):
             searched_text = f"""
 🔍__**Video Track Information**__
 
-❇️**Title:** {title}
+➤ **Title:** {title}
 
 ⏳**Duration:** {duration} Mins
 👀**Views:** `{views}`
